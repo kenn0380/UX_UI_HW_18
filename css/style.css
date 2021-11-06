@@ -1,0 +1,373 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+/* fonts */
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 50px;
+}
+h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 40px;
+}
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+}
+h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 34px;
+}
+
+p, 
+a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+
+
+/* Nav */
+
+.nav-button > a {
+    text-align: center;
+}
+
+    /* menu links */
+
+
+    .nav-button {
+        padding: 6px 12px;
+        text-decoration: none;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
+        margin: 0 24px;
+        color: black;
+        position: relative;
+    }
+
+    .nav-button:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: red;
+        transform-origin: bottom left;
+        transition: transform 0.1s ease;
+    }
+
+    .nav-button:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    
+#nav-bar {
+    z-index: 100;
+    background-color: white;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 16px;
+}
+
+
+/* Header */
+
+#header {
+    width: 860px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+
+#header-divider {
+    background-color: red;
+    height: 2px;
+    margin: 10px 0px;
+}
+
+#bottom-header {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+#left-about-me {
+    margin-right: 8px;
+}
+
+#right-social a {
+    padding-left: 16px;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid red;
+    white-space: nowrap;
+    letter-spacing: .20em;
+    animation: 
+      typing 2s steps(25, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 65% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: red; }
+  }
+
+#typewriter-text {
+    display: inline-block;
+}
+
+.typewriter {
+    display: inline-block;
+}
+
+#homepage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#down-container {
+    position: relative;
+    margin: 0px auto;
+}
+
+#down-indicator {
+    margin: 0px auto;
+    position: absolute;
+    margin: 0px auto;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    from {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 10px;
+      }
+    to {
+      margin-top: 0px;
+    }
+  }
+
+
+/* My Skills Section */
+
+#my-skills {
+    margin-bottom: 200px;
+}
+
+.title-section {
+    display: inline-block;
+    border-bottom: solid red 2px;
+    margin: 0 72px;
+}
+
+#my-skills-flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+
+#my-skills-tile-ux {
+    height: 360px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Images/hcd_background.jpg");
+    background-size: cover;
+    text-align: center;
+    margin: 40px 72px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#my-skills-tile-coding {
+    height: 360px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Images/html_css_background.jpg");
+    background-size: cover;
+    text-align: center;
+    margin: 40px 72px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#my-skills-tile-ui {
+    height: 360px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Images/ui-background.jpg");
+    background-size: cover;
+    text-align: center;
+    margin: 40px 72px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.project-title-divider {
+    border-bottom: solid black 1px;
+    margin: 4px 0px;
+}
+
+.my-skills-icon {
+    height: 100px;
+    width: 100px;
+}
+
+
+.my-skills-list {
+    display: none;
+}
+
+.my-skills-title {
+    padding: 8px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+/* Projects Section */
+
+#project-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "filled filled space";
+}
+
+.project-tile-container {
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    transition: 1s;
+    margin-bottom: 100px;
+    height: 304px;
+    grid-area: filled;
+}
+
+.project-img {
+    max-width: 390px;
+    max-height: 304px;
+}
+
+.space {
+    grid-area: space;
+}
+
+#project-container:nth-of-type(2n) {
+    justify-content: flex-end;
+}
+
+.project-tile-container:hover {
+    background-color: rgba(0, 0, 0, 0.00);
+    background-image: url("../Images/Background port.png");
+    background-size: cover;
+    transition: 1s;
+}
+
+.project-container-left {
+    width: 2fr;
+}
+
+.project-container-right {
+    margin-left: 8px;
+    align-self: center;
+}
+
+#project-container {
+    display: flex;
+    margin: 40px 72px;
+}
+
+.see-case-study-button {
+    display: inline-block;
+    padding: 8px 0px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -0.3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.see-case-study-button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transform-origin: bottom left;
+    transition: transform 0.1s ease;
+}
+
+.see-case-study-button:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.project-titling {
+    position: relative;
+}
+
+
+
+/* footer */
+
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 120px;
+    background-color: white;
+}
+
+#right-footer {
+    display: flex;
+    justify-content: space-evenly;
+}
