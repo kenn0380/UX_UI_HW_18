@@ -49,7 +49,7 @@
 
             <div id="left-nav">
 
-                <a href="index.html" id="home-link">
+                <a href="#container" id="home-link">
 
                     <img id="logo" class="logo" alt="John R Kenney Design" src="Images/logo_(background).png">
 
@@ -63,13 +63,13 @@
 
             <div id="right-nav">
 
-                <a href="" class="nav-button">
+                <a href="#my-work" class="nav-button">
                     My Work</a>
 
-                <a href="" class="nav-button">
+                <a target="_blank" href="downloads/Resume 10:31:21.pdf" class="nav-button" download="Resume">
                     Resume</a>
 
-                <a href="" class="nav-button">
+                <a href="#contact-section" class="nav-button">
                     Contact</a>
 
             </div>
@@ -191,9 +191,9 @@
                     <img class="my-skills-icon" src="Images/Code icon.png" alt="human centered design icon">
 
                         <div class="my-skills-list">
-                            <h4>user research</h4>
-                            <h4>ideation</h4>
-                            <h4>usability testing</h4>
+                            <h4>responsive web design</h4>
+                            <h4>coded prototypes</h4>
+                            <h4>interactivity</h4>
                         </div>
 
                     <div class="my-skills-title">
@@ -211,9 +211,9 @@
                     <img class="my-skills-icon" src="Images/UI icon.png" alt="human centered design icon">
 
                         <div class="my-skills-list">
-                            <h4>user research</h4>
-                            <h4>ideation</h4>
-                            <h4>usability testing</h4>
+                            <h4>design systems</h4>
+                            <h4>micro-interactions</h4>
+                            <h4>information architecture</h4>
                         </div>
 
                     <div class="my-skills-title">
@@ -232,7 +232,7 @@
         <!-- My Work Section-->
 
 
-        <div class="title-section">
+        <div class="title-section" id="my-work">
 
             <h2>My Work</h2>
 
@@ -264,8 +264,8 @@
                     
                 </div>
 
-                <div class="project-container-right">
-                    <img src="Images/bia_homepage.png" alt="picture of desktop mockup">
+                <div class="project-container-right" id="case-study-1">
+                    <img class="project-img" src="Images/bia_homepage.png" alt="picture of desktop mockup">
                 </div>
 
             </div> 
@@ -284,11 +284,11 @@
                     <div class="project-titling">
 
                         <div class="main-title">
-                            <h4>BIA Redesign</h4> 
+                            <h4>Tribi Mobile App</h4> 
                         </div>    
                           
                         <div class="main-title">
-                            <h4>Raising Publicity Through Brand Identity</h4> 
+                            <h4>Simultaneous group payments</h4> 
                         </div>  
                          
                         <div class="project-title-divider">
@@ -300,8 +300,8 @@
                     </div>
                 </div>
 
-                <div class="project-container-right">
-                    <img src="Images/Mockup 2.png" alt="picture of desktop mockup">
+                <div class="project-container-right" id="case-study-2">
+                    <img class="project-img" src="Images/Mockup 2.png" alt="picture of desktop mockup">
                 </div>
 
             </div> 
@@ -320,11 +320,11 @@
                     <div class="project-titling">
 
                         <div class="main-title">
-                            <h4>BIA Redesign</h4> 
+                            <h4>US Dept. of Ed Redesign</h4> 
                         </div>    
                  
                         <div class="main-title">
-                            <h4>Raising Publicity Through Brand Identity</h4> 
+                            <h4>User success through Information Architecture</h4> 
                         </div>    
                     </div>
                            
@@ -336,7 +336,7 @@
                     </div>
                 </div>
 
-                <div class="project-container-right">
+                <div class="project-container-right" id="case-study-3">
                     <img class="project-img" src="Images/SITE MAP.png" alt="picture of desktop mockup">
                 </div>
 
@@ -347,7 +347,34 @@
 
         </div>
 
-        
+
+        <!-- Contact -->
+
+        <section id="contact-section">
+
+            <div class="title-section">
+
+                <h2>Contact</h2>
+
+            </div>
+
+            <form>
+
+                <div id="form-left">
+                    <input type="text" class="text-input input" placeholder="Name"><br>
+                    <input type="text" class="text-input input" placeholder="Email"><br>
+                    <textarea class="text-input input" placeholder="Leave me a message!"></textarea>
+                </div>
+
+                <div id="form-right">
+                    <button class="reg-button nav-button" type="submit">Submit &#8594;</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <!--Footer-->
 
         <footer id="footer">
 
@@ -357,7 +384,7 @@
 
             <!-- <div id="right-footer"> -->
 
-                <a><img src="Images/logos_linkedin_footer.png" alt="Linked In"></a>
+                <a href="https://www.linkedin.com/in/john-kenney-b4bba5173" target="_blank"><img src="Images/logos_linkedin_footer.png" alt="Linked In"></a>
                 <a><img src="Images/logos_behance_footer.png" alt="Behance"></a>
 
             <!-- </div> -->
