@@ -67,3 +67,13 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+
+$(window).scroll(function(){
+    var myVideo = document.getElementsByClassName("case-study-video");
+    // console.log($(window).scrollTop());
+    if($(window).scrollTop() > 300 && $(window).scrollTop() < 975){
+        myVideo.play();
+    }else{
+            myVideo.pause();
+    }
+})

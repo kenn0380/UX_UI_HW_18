@@ -42,6 +42,8 @@ a{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     font-weight: 300;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -64,6 +66,7 @@ a{
         margin: 0 24px;
         color: black;
         position: relative;
+        cursor: pointer;
     }
 
     .nav-button:after {
@@ -157,7 +160,7 @@ a{
     display: inline-block;
 }
 
-#homepage {
+#page {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -455,4 +458,39 @@ input {
 #right-footer {
     display: flex;
     justify-content: space-evenly;
+}
+
+/* Case study page styles */
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero-left {
+    text-align: right;
+}
+
+.hero-left > h1 {
+    display: inline-block;
+    border-bottom: solid red 2px;
+}
+
+.case-study-video {
+    max-width: 60%;
+}
+
+.content-card {
+    width: 100vw;
+    margin: 0 72px;
+    display: flex;
+}
+
+.content-right {
+    max-width: 60%;
+}
+
+.content-img {
+    object-fit: contain;
 }
